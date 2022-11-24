@@ -1,0 +1,131 @@
+body{
+	font-family: "Helvetica";
+}
+
+.container{
+	width: 1160px;
+	margin: 0 auto;
+}
+
+.image-wrapper{
+	width: 700px;
+	height: 600px;
+	border: 1px solid red;
+	background-image: url("../images/mountain1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+/*	position: relative;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-wrapper h1{
+	font-size: 32px;
+	color: #888;
+/*	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
+	background: white;
+	position: absolute;
+}
+
+.img1{
+	margin-top: 100px;
+	width: 700px;
+	height: 600px;
+}
+
+.element1, .element2{
+	font-size: 24px;
+}
+
+.element1::after{
+	content: "this is from css";
+	background-color: red;
+	margin-left: 50px;
+}
+
+.element1::before{
+	content: "this is Before from css";
+	background-color: blue;
+	margin-left: 50px;
+}
+
+
+
+.element2::before{
+	content: url("https://www.w3schools.com/css/smiley.gif");
+
+}
+
+/*p::first-letter{
+	font-size: 32px;
+	color: blue;
+
+}*/
+
+/* Flex */
+/*.flex-wrapper{
+	margin-top: 100px;
+	border: 1px solid red;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	column-gap: 30px;
+	row-gap: 20px;
+}
+
+.box{
+	width: 200px;
+	height: 150px;
+	background-color: lightblue;
+}*/
+
+/* Project  */
+header{
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid #ccc;
+}
+
+.nav-list{
+	display: flex;
+	column-gap: 30px;
+}
+
+
+.nav-list li {
+	border-bottom: 2px solid blue;
+}
+
+.nav-list a{
+	font-size: 24px;
+}
+
+.logo{
+	font-size: 30px;
+}
+
+/* Section Cards */
+.cards-section{
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 40px;
+	margin-top: 100px;
+}
+
+.card{
+	width: 360px;
+	height: 350px;
+	background-color: #eaeaea;
+	border-radius: 8px;
+}
+
+.text-wrapper{
+	padding: 50px 30px 20px 20px;
+}
